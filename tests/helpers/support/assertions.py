@@ -23,4 +23,7 @@ def assert_from_db(conn, user_action, feedback):
             flag = True
 
     if flag:
-        raise AssertionError(f"params from request - 'user_action': {user_action}, 'feedback': {feedback}\nparams from DB - 'user_action': {result['user_action']}, 'feedback': {result['feedback']}")
+        raise AssertionError(f"params from request - 'user_action': " \
+                f"'{user_action}', 'feedback': '{feedback}'\nparams from DB " \
+                f"- 'user_action': '{result['user_action']}', 'feedback': "\
+                f"'{result['feedback']}'")
