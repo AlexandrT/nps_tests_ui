@@ -1,0 +1,10 @@
+pytest
+pytest-logger
+pytest-selenium
+pytest-html
+
+python-i18n[YAML]
+
+pyvirtualdisplay
+
+psycopg2
